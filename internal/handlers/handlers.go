@@ -3,9 +3,9 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/truby4/web_app_udemy_tsawler/internal/config"
-	"github.com/truby4/web_app_udemy_tsawler/internal/models"
-	"github.com/truby4/web_app_udemy_tsawler/internal/render"
+	"github.com/truby4/bnb-bookings/internal/config"
+	"github.com/truby4/bnb-bookings/internal/models"
+	"github.com/truby4/bnb-bookings/internal/render"
 )
 
 var Repo *Repository

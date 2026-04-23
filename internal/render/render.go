@@ -7,8 +7,9 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/truby4/web_app_udemy_tsawler/internal/config"
-	"github.com/truby4/web_app_udemy_tsawler/internal/models"
+	"github.com/truby4/bnb-bookings/internal/config"
+	"github.com/truby4/bnb-bookings/internal/models"
+
 )
 
 var app *config.AppConfig

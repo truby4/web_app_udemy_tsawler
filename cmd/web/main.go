@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/truby4/web_app_udemy_tsawler/internal/config"
-	"github.com/truby4/web_app_udemy_tsawler/internal/handlers"
-	"github.com/truby4/web_app_udemy_tsawler/internal/render"
+	"github.com/truby4/bnb-bookings/internal/config"
+	"github.com/truby4/bnb-bookings/internal/handlers"
+	"github.com/truby4/bnb-bookings/internal/render"
 )
 
 const portNumber = ":8080"

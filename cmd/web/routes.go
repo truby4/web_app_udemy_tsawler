@@ -5,8 +5,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/truby4/web_app_udemy_tsawler/internal/config"
-	"github.com/truby4/web_app_udemy_tsawler/internal/handlers"
+	"github.com/truby4/bnb-bookings/internal/config"
+	"github.com/truby4/bnb-bookings/internal/handlers"
 )
 
 func routes(app *config.AppConfig) http.Handler {
