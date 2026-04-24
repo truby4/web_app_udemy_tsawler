@@ -30,12 +30,29 @@ func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 	render.Render(w, "home.page.tmpl", &models.TemplateData{})
 }
 
+func (m *Repository) Generals(w http.ResponseWriter, r *http.Request) {
+	render.Render(w, "generals.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Majors(w http.ResponseWriter, r *http.Request) {
+	render.Render(w, "majors.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Availability(w http.ResponseWriter, r *http.Request) {
+	render.Render(w, "search-availability.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Reservation(w http.ResponseWriter, r *http.Request) {
+	render.Render(w, "reservation.page.tmpl", &models.TemplateData{})
+}
+
+func (m *Repository) Contact(w http.ResponseWriter, r *http.Request) {
+	render.Render(w, "contact.page.tmpl", &models.TemplateData{})
+}
+
 func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 	stringMap := make(map[string]string)
 	stringMap["test"] = "Hello again"
-
-	remoteIP := m.App.Session.GetString(r.Context(), "remote_ip")
-	stringMap["remote_ip"] = remoteIP
 
 	render.Render(w, "about.page.tmpl", &models.TemplateData{
 		StringMap: stringMap,

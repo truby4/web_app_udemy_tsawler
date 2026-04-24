@@ -1,52 +1,5 @@
 let attention = Prompt();
 
-document
-  .getElementById("colorButton")
-  .addEventListener("click", function () {
-    let html = `
-      <form
-          id="check-availability-form"
-          action=""
-          method="post"
-          novalidate
-          class="needs-validation"
-      >
-
-                  <div
-                      class="row"
-                      id="reservation-dates-modal"
-                  >
-                      <div class="col">
-                          <input
-                              required
-                              class="form-control"
-                              type="text"
-                              name="start"
-                              id="start"
-                              placeholder="Arrival"
-                          />
-                      </div>
-                      <div class="col">
-                          <input
-                              required
-                              class="form-control"
-                              type="text"
-                              name="end"
-                              id="end"
-                              placeholder="Departure"
-                          />
-                      </div>
-
-          </div>
-      </form>
-      `;
-
-    attention.custom({
-      msg: html,
-      title: "Choose your dates",
-    });
-  });
-
 (() => {
   "use strict";
 
@@ -71,11 +24,6 @@ document
     );
   });
 })();
-
-const elem = document.getElementById("reservation-dates");
-const rangepicker = new DateRangePicker(elem, {
-  format: "dd-mm-yyyy",
-});
 
 function notify(msg, type) {
   notie.alert({
